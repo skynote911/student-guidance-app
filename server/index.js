@@ -40,14 +40,16 @@ app.use('/api/admin', adminRoutes);
 // Serve uploaded files
 app.use('/uploads', express.static('uploads'));
 
-// Health check
-app.get('/health', (req, res) => {
+// Health check (Both root and /api for proxy compatibility)
+const healthCheck = (req, res) => {
     res.json({
         status: 'ok',
         timestamp: new Date().toISOString(),
         mongodb: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected'
     });
-});
+};
+app.get('/health', healthCheck);
+app.get('/api/health', healthCheck);
 
 // 404 handler
 app.use((req, res) => {
