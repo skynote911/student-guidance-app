@@ -1,0 +1,372 @@
+{
+  "timestamp": "2025-11-27T09:37:25.997Z",
+  "phase": "Phase 3: 출결 시각화 및 마일리지 (Scenario 2)",
+  "tests": [
+    {
+      "name": "파일 존재 확인: 출결 라우트",
+      "status": "pass",
+      "message": "파일 존재: server/routes/attendance.js",
+      "details": null
+    },
+    {
+      "name": "파일 존재 확인: 출결 모델",
+      "status": "pass",
+      "message": "파일 존재: server/models/Attendance.js",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 모델 스키마 - \"PRESENT\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 모델 스키마 - \"LATE\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 모델 스키마 - \"ABSENT\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 모델 스키마 - \"EARLY_LEAVE\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 모델 스키마 - \"studentId\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 모델 스키마 - \"date\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 모델 스키마 - \"status\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 존재 확인: 학생 모델",
+      "status": "pass",
+      "message": "파일 존재: server/models/Student.js",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 학생 모델 스키마 (마일리지 포함) - \"mileage\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 학생 모델 스키마 (마일리지 포함) - \"studentId\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 학생 모델 스키마 (마일리지 포함) - \"teacherId\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 API 엔드포인트 - \"GET.*students\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 API 엔드포인트 - \"POST.*students\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 API 엔드포인트 - \"POST.*attendance\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 API 엔드포인트 - \"GET.*history\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 마일리지 계산 로직 - \"mileageChange\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 마일리지 계산 로직 - \"status === 'PRESENT'\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 마일리지 계산 로직 - \"mileage.*\\+=\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 서버 라우트 등록 - \"attendanceRoutes\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 서버 라우트 등록 - \"/api/attendance\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 존재 확인: 출결 페이지",
+      "status": "pass",
+      "message": "파일 존재: client/src/pages/Attendance.jsx",
+      "details": null
+    },
+    {
+      "name": "파일 존재 확인: 출결 차트 컴포넌트",
+      "status": "pass",
+      "message": "파일 존재: client/src/components/AttendanceChart.jsx",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 페이지 기능 - \"getStudents\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 페이지 기능 - \"addStudent\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 페이지 기능 - \"markAttendance\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 페이지 기능 - \"getAttendanceHistory\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 페이지 기능 - \"selectedStudent\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 페이지 기능 - \"history\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 페이지 기능 - \"mileage\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 차트 구현 - \"BarChart\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 차트 구현 - \"PRESENT\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 차트 구현 - \"LATE\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 차트 구현 - \"ABSENT\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 차트 구현 - \"EARLY_LEAVE\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 차트 구현 - \"statusCounts\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 차트 구현 - \"ResponsiveContainer\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 API 서비스 - \"getStudents\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 API 서비스 - \"addStudent\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 API 서비스 - \"markAttendance\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 API 서비스 - \"getAttendanceHistory\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 API 서비스 - \"/attendance\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 페이지 라우팅 - \"/attendance\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 출결 페이지 라우팅 - \"Attendance\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 대시보드 출결 링크 - \"/attendance\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "파일 내용 확인: 대시보드 출결 링크 - \"출결.*마일리지\"",
+      "status": "pass",
+      "message": "패턴 발견됨",
+      "details": null
+    },
+    {
+      "name": "학생 등록 기능",
+      "status": "pass",
+      "message": "학생 등록 폼 구현됨",
+      "details": null
+    },
+    {
+      "name": "출결 처리 버튼",
+      "status": "pass",
+      "message": "출석/지각/결석 버튼 구현됨",
+      "details": null
+    },
+    {
+      "name": "마일리지 표시",
+      "status": "pass",
+      "message": "마일리지 표시 구현됨",
+      "details": null
+    },
+    {
+      "name": "학생 선택 기능",
+      "status": "pass",
+      "message": "학생 선택 기능 구현됨",
+      "details": null
+    },
+    {
+      "name": "출결 기록 조회",
+      "status": "pass",
+      "message": "출결 기록 조회 기능 구현됨",
+      "details": null
+    },
+    {
+      "name": "차트 데이터 처리",
+      "status": "pass",
+      "message": "차트 데이터 처리 로직 구현됨",
+      "details": null
+    },
+    {
+      "name": "차트 렌더링",
+      "status": "pass",
+      "message": "차트 렌더링 구현됨",
+      "details": null
+    },
+    {
+      "name": "마일리지 업데이트 로직",
+      "status": "pass",
+      "message": "마일리지 업데이트 로직 구현됨",
+      "details": null
+    },
+    {
+      "name": "출석 시 마일리지 증가",
+      "status": "pass",
+      "message": "출석 시 마일리지 증가 로직 구현됨",
+      "details": null
+    },
+    {
+      "name": "최근 30일 기록 조회",
+      "status": "pass",
+      "message": "30일 제한 구현됨",
+      "details": null
+    },
+    {
+      "name": "recharts 라이브러리",
+      "status": "pass",
+      "message": "recharts 설치됨 (^3.5.0)",
+      "details": null
+    },
+    {
+      "name": "에러 처리",
+      "status": "pass",
+      "message": "에러 처리 구현됨",
+      "details": null
+    },
+    {
+      "name": "로딩 상태",
+      "status": "pass",
+      "message": "로딩 상태 구현됨",
+      "details": null
+    }
+  ],
+  "summary": {
+    "total": 60,
+    "passed": 60,
+    "failed": 0,
+    "warnings": 0
+  }
+}

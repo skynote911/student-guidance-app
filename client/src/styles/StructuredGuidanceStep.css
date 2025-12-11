@@ -1,0 +1,182 @@
+/* StructuredGuidanceStep 스타일 */
+
+.structured-step-content {
+    line-height: 1.8;
+    color: #334155;
+}
+
+/* 섹션 스타일 */
+.guidance-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.guidance-section {
+    background: #f8fafc;
+    border-left: 3px solid var(--primary-color, #6366f1);
+    padding: 1rem 1.25rem;
+    border-radius: 0.5rem;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 0.75rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.section-title .material-icons-round {
+    font-size: 1.25rem;
+    color: var(--primary-color, #6366f1);
+}
+
+.section-items {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.section-items li {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.section-items li strong {
+    color: #1e293b;
+    font-weight: 600;
+}
+
+.section-text {
+    margin: 0.75rem 0 0 0;
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* 번호 목록 스타일 */
+.guidance-items {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    list-style-type: decimal;
+    counter-reset: item;
+}
+
+.guidance-items li {
+    margin: 0.75rem 0;
+    padding-left: 0.5rem;
+    line-height: 1.7;
+}
+
+.guidance-items li strong {
+    color: #1e293b;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+/* 강조 사항 스타일 */
+.guidance-highlights {
+    background: #fef3c7;
+    border: 1px solid #fbbf24;
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+}
+
+.highlights-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 0.75rem 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #92400e;
+}
+
+.highlights-title .material-icons-round {
+    font-size: 1.25rem;
+    color: #f59e0b;
+}
+
+.highlights-list {
+    margin: 0;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.highlight-item {
+    margin: 0.5rem 0;
+    color: #78350f;
+    line-height: 1.6;
+}
+
+.highlight-item strong {
+    color: #92400e;
+    font-weight: 600;
+}
+
+/* 참고 사항 스타일 */
+.guidance-notes {
+    background: #eff6ff;
+    border: 1px solid #93c5fd;
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+}
+
+.notes-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 0.75rem 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1e40af;
+}
+
+.notes-title .material-icons-round {
+    font-size: 1.25rem;
+    color: #3b82f6;
+}
+
+.notes-list {
+    margin: 0;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.notes-list li {
+    margin: 0.5rem 0;
+    color: #1e3a8a;
+    line-height: 1.6;
+}
+
+/* 자동 구조화된 리스트 */
+.auto-structured-list {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    line-height: 1.8;
+}
+
+.auto-structured-list li {
+    margin: 0.75rem 0;
+    color: #475569;
+}
+
+/* 기본 텍스트 스타일 */
+.step-content {
+    line-height: 1.8;
+}
+
+.step-content-text {
+    margin: 0;
+    color: #475569;
+    line-height: 1.8;
+    white-space: pre-wrap;
+}
+
+
