@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Use environment variable if available (Vercel), otherwise fallback to proxy (Local)
 // const API_URL = import.meta.env.VITE_API_URL || '/api';
-const API_URL = 'https://student-guidance-app.onrender.com/api'; // HARDCODED DEBUG
+const API_URL = '/api'; // Use Relative Path for Vercel Proxy
 console.log('🔌 Connecting to Backend API:', API_URL);
 
 // Create axios instance
