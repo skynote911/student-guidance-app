@@ -46,12 +46,16 @@ router.post('/register', async (req, res) => {
             });
         }
 
+        // Check if this is the first accout (to assign Admin role)
+        const isFirstAccount = (await Teacher.countDocuments({})) === 0;
+
         // Create new teacher
         const teacher = new Teacher({
             email,
             password,
             name,
-            schoolLevel: schoolLevel || 'all'
+            schoolLevel: schoolLevel || 'all',
+            role: isFirstAccount ? 'admin' : 'teacher'
         });
 
         await teacher.save();
