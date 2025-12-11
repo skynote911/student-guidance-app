@@ -14,7 +14,19 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors());
+// Middleware to log all requests
+app.use((req, res, next) => {
+    console.log(`📡 [${req.method}] ${req.url} | Origin: ${req.headers.origin}`);
+    next();
+});
+
+// Configure CORS for Vercel
+app.use(cors({
+    origin: true, // Allow any origin temporarily for debugging
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(express.json({ limit: '10mb' })); // 10MB limit for file uploads/bulk data
 app.use(express.urlencoded({ extended: true }));
 
