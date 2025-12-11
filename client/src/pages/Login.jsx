@@ -44,7 +44,7 @@ const Login = () => {
                 <div className="auth-header">
                     <span className="material-icons-round auth-icon">school</span>
                     <h1>생활지도 도우미</h1>
-                    <p className="auth-subtitle">교사 로그인 (v2.0 Check)</p>
+                    <p className="auth-subtitle">교사 로그인 (v2.1 Hardcoded)</p>
                 </div>
 
                 {error && (
