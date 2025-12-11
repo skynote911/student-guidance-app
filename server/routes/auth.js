@@ -111,7 +111,7 @@ router.post('/login', async (req, res) => {
 
             const token = jwt.sign(
                 { id: mockTeacher._id, role: mockTeacher.role },
-                process.env.JWT_SECRET,
+                process.env.JWT_SECRET || 'dev_fallback_secret',
                 { expiresIn: '24h' }
             );
 
@@ -186,7 +186,7 @@ router.post('/login', async (req, res) => {
 
         const token = jwt.sign(
             { id: mockTeacher._id, role: mockTeacher.role },
-            process.env.JWT_SECRET,
+            process.env.JWT_SECRET || 'dev_fallback_secret',
             { expiresIn: '24h' }
         );
 

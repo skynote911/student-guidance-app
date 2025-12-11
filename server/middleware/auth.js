@@ -19,7 +19,7 @@ export const authenticate = async (req, res, next) => {
         const token = authHeader.substring(7); // Remove 'Bearer ' prefix
 
         // Verify token
-        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+        const decoded = jwt.verify(token, process.env.JWT_SECRET || 'dev_fallback_secret');
 
         // Handle Mock Login (Offline Mode)
         if (decoded.id === 'mock_teacher_id') {
