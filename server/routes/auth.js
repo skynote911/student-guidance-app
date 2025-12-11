@@ -59,7 +59,7 @@ router.post('/register', async (req, res) => {
         // Generate JWT token
         const token = jwt.sign(
             { id: teacher._id, role: teacher.role },
-            process.env.JWT_SECRET,
+            process.env.JWT_SECRET || 'dev_fallback_secret',
             { expiresIn: '24h' }
         );
 
@@ -153,7 +153,7 @@ router.post('/login', async (req, res) => {
         console.log('🎫 Generating JWT token...');
         const token = jwt.sign(
             { id: teacher._id, role: teacher.role },
-            process.env.JWT_SECRET,
+            process.env.JWT_SECRET || 'dev_fallback_secret',
             { expiresIn: '24h' }
         );
 
