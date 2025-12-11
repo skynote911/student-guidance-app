@@ -2,6 +2,7 @@ import axios from 'axios';
 
 // Use environment variable if available (Vercel), otherwise fallback to proxy (Local)
 const API_URL = import.meta.env.VITE_API_URL || '/api';
+console.log('🔌 Connecting to Backend API:', API_URL);
 
 // Create axios instance
 const api = axios.create({
