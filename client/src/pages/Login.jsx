@@ -21,7 +21,18 @@ const Login = () => {
             await login(email, password);
             navigate('/dashboard');
         } catch (err) {
-            setError(err.response?.data?.message || '로그인에 실패했습니다.');
+            // Detailed Error Handling for Debugging
+            if (err.response) {
+                // Server responded with an error (4xx, 5xx)
+                setError(`서버 오류 (${err.response.status}): ${err.response.data?.message || '알 수 없는 오류'}`);
+            } else if (err.request) {
+                // Request made but no response (Network Error)
+                setError(`서버 연결 실패: 응답이 없습니다. (API URL 확인 필요) - ${err.message}`);
+            } else {
+                // Other errors
+                setError(`오류 발생: ${err.message}`);
+            }
+            console.error('Login Error Detail:', err);
         } finally {
             setLoading(false);
         }
